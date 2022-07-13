@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./home3";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1  style={{marginTop:"64px",marginBottom:"0",paddingBottom:"0"}} className="text-center">
+            Build your own decentralized  photo album.</h1>
+        <h4  style={{marginBottom:"0",paddingBottom:"0"}} className="text-center">
+            Fully decentralized own photo album.</h4>
+        <div className='d-flex justify-content-center' style={{marginTop:"24px"}}>
+            <span onClick={()=> window.open("#", "_self")} className="btn-main inline lead">Connect with Metamask</span>
+        </div>
+        <Home />
     </div>
   );
 }
